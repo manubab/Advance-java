@@ -1,0 +1,12 @@
+package clone;
+
+
+
+class Address implements Cloneable 
+{
+	
+}
+
+public class DeepCloneaning {
+
+}

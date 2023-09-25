@@ -1,0 +1,18 @@
+package clone;
+class A{}
+
+public class Example3 implements Cloneable
+{
+	A a=new A();
+	
+	public static void main(String[] args) throws CloneNotSupportedException {
+		
+		Example3 e1=new Example3();
+		Example3 e2=(Example3) e1.clone();
+		
+		System.out.println(e1.a==e2.a);
+	}
+	
+	
+
+}

@@ -1,0 +1,40 @@
+package one;
+
+public class Test1
+{
+	
+	
+	
+	static void m1(int a)
+	 {
+		System.out.println(a+" premitive "); 
+	 }
+	
+	
+	static void m1(Object a)
+	 {
+		System.out.println(a+" Object Class "); 
+	 }
+	
+	
+	
+	
+	static void m1(Integer a)
+	 {
+		System.out.println(a+" Object "); 
+
+	 }
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+	
+		
+		m1(10);
+		m1(null);
+	}
+
+}

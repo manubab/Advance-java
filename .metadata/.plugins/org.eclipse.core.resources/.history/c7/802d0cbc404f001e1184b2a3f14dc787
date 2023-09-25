@@ -1,0 +1,32 @@
+package getclass;
+
+
+
+
+class A
+{
+	static void m1(Object obj)
+	{
+		String name=obj.getClass().getName();
+	}
+}
+
+
+class B{}
+
+class C extends B
+{
+	
+}
+
+
+
+public class Test 
+{
+	
+	
+
+}
+
+
+

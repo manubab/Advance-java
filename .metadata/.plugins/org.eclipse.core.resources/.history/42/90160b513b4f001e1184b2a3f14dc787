@@ -1,0 +1,17 @@
+package hashcode;
+
+
+class A
+{
+	int x;
+	A(int x)
+	{
+		this.x=x;
+	}
+	
+}
+
+
+public class IdentityHashCodeTest {
+
+}

@@ -1,0 +1,13 @@
+package clone;
+
+
+class Address
+{
+	int flatNo=1;
+	String colony="Ammerpet";
+	String city="Hyd";
+}
+
+public class shallowCloaning {
+
+}

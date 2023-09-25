@@ -1,0 +1,33 @@
+package test;
+
+import java.util.*;
+
+public class Test1 {
+	
+	public static String Roman(int a) {
+		
+		String[] thousends =new String[] {"M","MM","MMM"};
+		
+		String[] hundreads= {"","C","CC","CCC","CD","D","DC","DCC","DCCC","CM",};
+		
+		String[] tens= {"X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","IX"};
+		
+		String[] digits= {"","I","II","III","IV","V","VI","VII","VIII","IX"};
+		
+		
+		
+		return thousends[a/1000]+hundreads[(a%1000)/100]+tens[(a%100/10)]+digits[(a%10)];
+		
+			
+		
+		
+		
+		
+	}
+	public static void main(String[] args) {
+		String result=Test1.Roman(123);
+		System.out.println("result :"+result);
+		
+	}
+
+}

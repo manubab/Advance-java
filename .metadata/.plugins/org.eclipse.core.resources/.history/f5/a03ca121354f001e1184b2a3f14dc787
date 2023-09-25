@@ -1,0 +1,44 @@
+package objectclass;
+
+class Address{}
+public class Student
+{
+	
+	private int sno;
+	private String sname;
+	private int whichClass;
+	
+	
+	public Student(int sno,String sname,int whichClass)
+	{
+		this.sno=sno;
+		this.sname=sname;
+		this.whichClass=whichClass;
+	}
+	
+	public boolean equals(Object ob)
+	{
+		if(this==ob)
+		{
+			return true;	
+		}
+		else
+		{
+			if(ob instanceof Student)
+			{
+				Student s=(Student) ob;
+				
+				
+				return this.sno==s.sno&&
+						this.sname.equals(s.sname)&&
+				this.whichClass=s.whichClass;			;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		
+	}
+
+}

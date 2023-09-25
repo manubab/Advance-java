@@ -1,0 +1,57 @@
+package hashcode;
+
+
+class Student
+{
+	private int sno;
+	private String sname;
+	private int whichStd;
+	
+	public Student(int sno, String sname, int whichStd) {
+		this.sno = sno;
+		this.sname = sname;
+		this.whichStd = whichStd;
+	}
+	
+	
+	public boolean equals(Object ob)
+	{
+		if(this==ob)
+		{
+			return true;
+		}
+		else if(ob instanceof Student)
+		{
+		          Student s1=(Student)ob;
+		
+		return (this.sno==s1.sno
+				&&this.sname.equals(s1.sname)&&
+				this.whichStd==s1.whichStd
+				);
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+	public int hashCode()
+	{
+		return (sno+sname.length()+whichStd);
+	}
+	
+	
+}
+
+
+public class Test 
+{
+	public static void main(String[] args) {
+		
+		Student s1=new Student(1, "HariKrishna", 9);
+	
+		Student s2=new Student(1, "HariKrishna", 9);
+
+	}
+
+}

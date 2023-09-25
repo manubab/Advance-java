@@ -1,0 +1,25 @@
+package one;
+
+public class Test2
+{
+	public static void main(String[] args) {
+		
+		try
+		{
+			int a=10;
+			int b=0;
+			int c=10/0;
+			
+		}
+		
+		catch(ArthematicException e)
+		{
+			System.out.println("divide by 0");
+		}
+		
+		
+		
+		
+	}
+
+}

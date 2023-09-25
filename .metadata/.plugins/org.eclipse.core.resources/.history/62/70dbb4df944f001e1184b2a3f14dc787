@@ -1,0 +1,20 @@
+package clone;
+
+class A2
+{
+	
+}
+class B2{
+	
+}
+
+class C1{
+	A a1=new A();
+}
+
+public class D1 extends C1 implements Cloneable
+{
+	
+	B2 b1=new B2();
+
+}

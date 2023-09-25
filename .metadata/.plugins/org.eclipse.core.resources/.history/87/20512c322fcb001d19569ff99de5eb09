@@ -1,0 +1,22 @@
+package test;
+
+import java.util.*;
+
+public class Test1 {
+	
+	public String Roman(int a) {
+		
+		String[] thousends =new String[] {"M","MM","MMM"};
+		
+		String[] tens= {"X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","IX"};
+		
+		String[] digits= {"","I","II","III","IV","V","VI","VII","VIII","IX"};
+		
+			
+		
+		
+		
+		
+	}
+
+}

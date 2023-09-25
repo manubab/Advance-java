@@ -1,0 +1,23 @@
+package objectclass;
+
+public class EqualsMethod 
+{
+	int x=10;
+	int y=20;
+	EqualsMethod ob1=new EqualsMethod();
+
+	public static void main(String[] args) {
+		
+		EqualsMethod ob1=new EqualsMethod();
+		EqualsMethod ob2=new EqualsMethod();
+		
+		
+		
+	}
+	
+	public boolean equals(Object ob)
+	{
+		return(this==ob1);
+	}
+
+}

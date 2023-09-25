@@ -1,0 +1,13 @@
+package clone;
+
+public class Example2 implements Cloneable
+{
+	int x=10,y=20;
+	
+	public Example2 clone()throws CloneNotSupportedException
+	{
+		return (Example2) super.clone();
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package clone;
+class A{}
+
+public class Example3 implements Cloneable
+{
+	A a=new A();
+	
+	
+	
+
+}

@@ -1,0 +1,26 @@
+package clone;
+
+
+
+class Address1 implements Cloneable 
+{
+	int flatNo=1;
+	String colony="Ameerpet";
+	String city="HYD";
+	
+	public Address1 clone()throws CloneNotSupportedException
+	{
+		
+		return (Address1)super.clone();
+	}
+}
+
+public class DeepCloneaning 
+{
+	int sno=1;
+	String sname="StudentOne";
+	String course="Course1";
+    double fee=1000;
+    Address add=new Address();
+
+}

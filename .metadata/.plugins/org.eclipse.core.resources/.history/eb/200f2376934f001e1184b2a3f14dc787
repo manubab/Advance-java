@@ -1,0 +1,36 @@
+package clone;
+
+class A1
+{
+	int p=5;
+	
+}
+class B extends A1
+{
+	int q=6;
+}
+
+class C extends B 
+{
+	int r=7;
+}
+public class D extends C implements Cloneable
+{
+	
+	int s=8;
+	
+	
+	public String toString()
+	{
+		return "p"+p+"\n"+
+	           "q"+q+"\n"+
+				"r"+r+"\n"+
+	           "s"+s;
+	
+				
+	}
+	
+	
+}
+
+

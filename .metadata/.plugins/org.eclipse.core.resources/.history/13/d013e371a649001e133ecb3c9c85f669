@@ -1,0 +1,29 @@
+package mathbasics;
+
+import java.util.*;
+
+public class Summing {
+
+	static int sum = 0;
+
+	public static int summing(int n) {
+		while (n > 0) {
+			int r = n % 10;
+			sum = sum + r;
+			n = n / 10;
+		}
+
+		return sum;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number :");
+
+		int n = sc.nextInt();
+		int sum = summing(n);
+
+		System.out.println(sum);
+	}
+
+}

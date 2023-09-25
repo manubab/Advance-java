@@ -1,0 +1,116 @@
+package UserDefined;
+
+
+import java.util.*;
+import java.io.*;
+
+
+class Employee implements Serializable,Comparable{
+	String eid,ename,mailid;
+	float bsal;
+	long phno;
+	public Employee(String eid, String ename, String mailid, float bsal,long phno) {
+		super();
+		this.eid = eid;
+		this.ename = ename;
+		this.mailid = mailid;
+		this.bsal = bsal;
+		this.phno=phno;
+	}
+	public String toString() {
+		return eid+" "+ename+" "+mailid+" "+bsal;
+	}
+	
+	public int compareTo(Object o) {
+		Employee emp=(Employee)o;
+	int k=emp.ename.compareTo(emp.ename);
+		if(k==0) {
+			return 0;
+		}else if(k>0) {
+			return 1;
+		}else {
+			return -1;
+		}
+	}
+	
+}
+
+public class EmployeeDemo {
+	public static void main(String[] args) throws Exception {
+		Scanner sc=new Scanner(System.in);
+		TreeSet<Employee> ob= new TreeSet<Employee>();
+		String name="TreeSet";
+		System.out.println("Enter number of Emoloyees");
+		int n=sc.nextInt();
+		sc.nextLine();
+		ObjectOutputStream oos=null;
+		File file=null;
+		for(int i=1;i<=n;i++) {
+			System.out.println("Enter "+i+" Deatils \n");
+			System.out.println("Enter Employee id");
+			String eid=sc.nextLine();
+			System.out.println("Enter Employee ename");
+			String ename=sc.nextLine();
+			System.out.println("Enter Employee mailid");
+			String mailid=sc.nextLine();
+			System.out.println("Enter Employee bsal ");
+			float bsal=Float.parseFloat(sc.nextLine());
+			System.out.println("Enter Employee phnno");
+			long phno=Long.parseLong(sc.nextLine());
+			ob.add(new Employee(eid,ename,mailid,bsal,phno));
+			System.out.println("Employee Added Succesfully....!\n");
+			
+			
+			
+			file=new File("Employee.txt");
+			
+				oos=	new ObjectOutputStream(new FileOutputStream(file));
+			oos.writeObject(ob);
+			oos.close();
+			System.out.println("Employee Objects are Stored in to File Succesfully...!");
+
+			
+			}
+		while(true) {
+		oos=new ObjectOutputStream(new FileOutputStream(file));
+		oos.writeObject(ob);
+		oos.close();
+		
+		System.out.println("Reading data ");
+		
+		
+		Iterator<Employee>it=ob.iterator();
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}
+		}
+		
+	}
+	
+			
+	
+}
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+package objectclass;
+
+public class Student
+{
+	
+	private int sno;
+	private String sname;
+	private int whichClass;
+
+}

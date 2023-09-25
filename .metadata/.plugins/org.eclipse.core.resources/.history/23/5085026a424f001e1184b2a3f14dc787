@@ -1,0 +1,9 @@
+package clone;
+
+public class Example implements Cloneable
+{
+	public static void main(String[] args) {
+		
+	}
+
+}
